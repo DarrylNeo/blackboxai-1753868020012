@@ -1,0 +1,146 @@
+.contact-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: #cbd5e0;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.contact-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #718096;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 1rem;
+}
+
+.contact-basic-info {
+  flex: 1;
+}
+
+.contact-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.3;
+}
+
+.contact-username {
+  font-size: 0.875rem;
+  color: #718096;
+  margin: 0;
+  font-weight: 400;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.info-value {
+  font-size: 0.875rem;
+  color: #2d3748;
+  font-weight: 400;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 1.25rem;
+  }
+  
+  .contact-avatar {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+  }
+  
+  .contact-name {
+    font-size: 1rem;
+  }
+  
+  .contact-username {
+    font-size: 0.8rem;
+  }
+  
+  .info-value {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  
+  .contact-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .contact-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    margin-right: 0.75rem;
+  }
+  
+  .contact-name {
+    font-size: 0.95rem;
+  }
+  
+  .contact-username {
+    font-size: 0.75rem;
+  }
+  
+  .contact-details {
+    gap: 0.6rem;
+  }
+  
+  .info-label {
+    font-size: 0.7rem;
+  }
+  
+  .info-value {
+    font-size: 0.8rem;
+  }
+}
